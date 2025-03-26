@@ -19,3 +19,37 @@ body {
   }
 }
 
+.avatar-reloj {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.manecilla {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+}
+
+.minutos svg {
+  animation: girarMinutos 60s linear infinite;
+  transform-origin: center;
+}
+
+.segundos svg {
+  animation: girarSegundos 5s linear infinite;
+  transform-origin: center;
+}
+
