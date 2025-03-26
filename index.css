@@ -91,7 +91,7 @@ h2{
   z-index: 2;
 }
 
-/* Cuando el usuario pasa el ratón por la imagen */
+
 .avatar-reloj:hover .mensaje {
   opacity: 1;
   transform: translateX(0);
