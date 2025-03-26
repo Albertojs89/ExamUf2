@@ -6,10 +6,13 @@ body {
   padding-top: 50px;
 }
 
+h2{
+  font-size: 38px;
+}
 .animado {
   opacity: 0;
   transform: translateY(-20px);
-  animation: aparecer 1s ease-out forwards;
+  animation: aparecer 2s ease-out forwards;
 }
 
 @keyframes aparecer {
@@ -21,8 +24,8 @@ body {
 
 .avatar-reloj {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 300px; 
+  height: 300px; 
   margin: 0 auto;
 }
 
@@ -31,25 +34,52 @@ body {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid white;
+  border: 3px solid white; 
 }
 
 .manecilla {
   position: absolute;
   top: 0;
   left: 0;
-  width: 200px;
-  height: 200px;
+  width: 300px; 
+  height: 300px; 
   pointer-events: none;
 }
 
 .minutos svg {
+  width: 300px; 
+  height: 300px;
   animation: girarMinutos 60s linear infinite;
   transform-origin: center;
 }
 
 .segundos svg {
+  width: 300px; 
+  height: 300px;
   animation: girarSegundos 5s linear infinite;
   transform-origin: center;
 }
 
+@keyframes girarMinutos {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes girarSegundos {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* menasje al pasar raton */
+
+.mensaje{
+  position: absolute;
+}
